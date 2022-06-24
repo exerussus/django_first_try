@@ -1,0 +1,46 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+<h1></h1>
+<br>
+<h1></h1>
+<br>
+<h1></h1>
+<br>
+<h1></h1>
+<br>
+<h1></h1>
+<br>
+<h1></h1>
+<br>
+<div class="container text-center">
+  <h1> Генератор паролей </h1>
+
+  <form action="{% url 'password' %}">
+
+    <select name="length">
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8" selected="selected">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+    </select>  Длина пароля
+
+    <br>
+    <input type="checkbox" name="uppercase"> Регистр
+    <br>
+    <input type="checkbox" name="numbers"> Цифры
+    <br>
+    <input type="checkbox" name="special"> Знаки
+    <br>
+
+    <input type="submit" value="Создать пароль" class="btn btn-primary">
+    <br>
+
+  <a href="{% url 'about' %}">О создателе сайта</a>
+  <br>
+  </form>
+</div>
